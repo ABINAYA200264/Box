@@ -7,6 +7,7 @@ function App() {
   const [vehicle, setVehicle] = useState("");
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
+  
 
   // Backend URL — since FastAPI serves frontend, use relative path
   const API_URL = "/api";
