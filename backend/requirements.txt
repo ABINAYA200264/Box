@@ -1,4 +1,6 @@
 fastapi
-uvicorn[standard]
+uvicorn
+torch
+opencv-python
+pandas
 python-multipart
-aiofiles
