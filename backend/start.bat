@@ -1,9 +1,9 @@
 @echo off
-REM Activate the virtual environment
-call .venv\Scripts\activate
+REM Start backend
+cd backend
+start cmd /k "uvicorn main:app --host 0.0.0.0 --port %PORT%"
+cd ..
 
-REM Run FastAPI server
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-
-REM Pause to keep the window open if needed
-pause
+REM Start frontend
+cd frontend
+start cmd /k "npm install && npm start"
