@@ -30,7 +30,7 @@ async def upload(file: UploadFile = File(...)):
 
 # --- Serve React build (if present) ---
 # Build folder expected at ../Frontend/build
-frontend_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Frontend", "build"))
+frontend_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "frontend", "build"))
 
 if os.path.isdir(frontend_dir):
     # mount static files and index
